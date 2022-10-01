@@ -23,6 +23,7 @@ btn.addEventListener('click',function(){
             getJEEAResult();
         }else{
             getJEEA();
+            
         }
     }else if(sel.value==2){
         if(type.value==1){

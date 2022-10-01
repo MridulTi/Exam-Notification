@@ -203,10 +203,10 @@ export async function getNEETRegister(){
             console.log(error);
         }
 }
-// getJEEMRegister();
-// getJEEMinfo();
-// getJEEMnews();
-// getNEETinfo();
-// getNEETRegister();
-// getNEETinfo();
+getJEEMRegister();
+getJEEMinfo();
+getJEEMnews();
+getNEETinfo();
+getNEETRegister();
+getNEETinfo();
 getJEEAinfo();

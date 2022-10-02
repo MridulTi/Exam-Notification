@@ -43,13 +43,14 @@ function getJEEM(){
                 let lis=document.querySelectorAll('li');
                 let ul= document.querySelector('ul');
                 let i=0;
-                document.querySelector('ul').innerHTML="";
+                document.querySelector('.list-show').innerHTML="";
             }
             let i=0;
             data.forEach(object=>{
                 let li=document.createElement('li');
                 let ul=document.querySelector('ul');
                 let a =document.createElement('a');
+                let hr=document.createElement('hr');
                 a.href=`${object.link}`;
                 a.target='_blank';
                 a.class="content";
@@ -58,6 +59,7 @@ function getJEEM(){
                 a.textContent+=object.content;
                 li.appendChild(a);
                 ul.appendChild(li);
+                ul.appendChild(hr);
                         
             })
         });
@@ -77,6 +79,7 @@ function getJEEMN(){
                 let li=document.createElement('li');
                 let ul=document.querySelector('ul');
                 let a =document.createElement('a');
+                let hr=document.createElement('hr');
                 a.href=`${object.link}`;
                 a.target='_blank';
                 a.class="content";
@@ -85,6 +88,7 @@ function getJEEMN(){
                 a.textContent+=object.content;
                 li.appendChild(a);
                 ul.appendChild(li);
+                ul.appendChild(hr);
                         
             })
         });
@@ -97,7 +101,7 @@ function getJEEMRegister(){
                 let lis=document.querySelectorAll('li');
                 let ul= document.querySelector('ul');
                 let i=0;
-                document.querySelector('ul').innerHTML=`<li><a href="https://examinationservices.nic.in/jeemain22/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFVj34FesvYg1WX45sPjGXBr4k3BRYopUWpW/JMEseWKI">JEE Main Registration</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://examinationservices.nic.in/jeemain22/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFVj34FesvYg1WX45sPjGXBr4k3BRYopUWpW/JMEseWKI">JEE Main Registration</a></li><hr/>`;
         }
     });
 }
@@ -109,7 +113,7 @@ function getJEEMResult(){
                 let lis=document.querySelectorAll('li');
                 let ul= document.querySelector('ul');
                 let i=0;
-                document.querySelector('ul').innerHTML=`<li><a href="https://ntaresults.nic.in/resultservices/JEEMAINauth22s2p1">JEE Mains Result</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://ntaresults.nic.in/resultservices/JEEMAINauth22s2p1">JEE Mains Result</a></li><hr/>`;
             }
         });
 }
@@ -128,6 +132,7 @@ function getJEEA(){
                 let li=document.createElement('li');
                 let ul=document.querySelector('ul');
                 let a =document.createElement('a');
+                let hr=document.createElement('hr');
                 a.href=`${object.link}`;
                 a.target='_blank';
                 a.class="content";
@@ -136,6 +141,7 @@ function getJEEA(){
                 a.textContent+=object.contt;
                 li.appendChild(a);
                 ul.appendChild(li);
+                ul.appendChild(hr);
                         
             })
         });
@@ -149,7 +155,7 @@ function getJEEARegister(){
                 let ul= document.querySelector('ul');
                 let i=0;
                 data.forEach(object=>{
-                document.querySelector('ul').innerHTML=`<li><a href="https://jeeadv.nic.in/jeeadvapp/root/loginpage.aspx">JEE Adv Registration</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://jeeadv.nic.in/jeeadvapp/root/loginpage.aspx">JEE Adv Registration</a></li><hr/>`;
             })}
         });
 }
@@ -161,7 +167,7 @@ function getJEEAResult(){
                 let lis=document.querySelectorAll('li');
                 let ul= document.querySelector('ul');
                 let i=0;
-                document.querySelector('ul').innerHTML=`<li><a href="https://result.jeeadv.ac.in/">JEE Advanced Result</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://result.jeeadv.ac.in/">JEE Advanced Result</a></li><hr/>`;
             }
         });
 }
@@ -180,6 +186,7 @@ function getNEET(){
                 let li=document.createElement('li');
                 let ul=document.querySelector('ul');
                 let a =document.createElement('a');
+                let hr=document.createElement('hr');
                 a.href=`${object.link}`;
                 a.target='_blank';
                 a.class="content";
@@ -188,6 +195,7 @@ function getNEET(){
                 a.textContent+=object.content;
                 li.appendChild(a);
                 ul.appendChild(li);
+                ul.appendChild(hr);
                         
             })
         });
@@ -200,7 +208,7 @@ function getNEETResult(){
                 let lis=document.querySelectorAll('li');
                 let ul= document.querySelector('ul');
                 let i=0;
-                document.querySelector('ul').innerHTML=`<li><a href="https://ntaresults.nic.in/resultservices/NEET-2022-auth">NEET Result</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://ntaresults.nic.in/resultservices/NEET-2022-auth">NEET Result</a></li><hr/>`;
             }
         });
 }
@@ -213,7 +221,7 @@ function getNEETRegister(){
                 let ul= document.querySelector('ul');
                 let i=0;
                 data.forEach(object=>{
-                document.querySelector('ul').innerHTML=`<li><a href="https://examinationservices.nic.in/neet2022/root/Home.aspx?enc=WPJ5WSCVWOMNiXoyyomJgATm16WDSuAdfwpi7ZXy4cM3hblcyDpJgf1oyFFZyuBY">NEET Registration</a></li>`;
+                document.querySelector('ul').innerHTML=`<li><a href="https://examinationservices.nic.in/neet2022/root/Home.aspx?enc=WPJ5WSCVWOMNiXoyyomJgATm16WDSuAdfwpi7ZXy4cM3hblcyDpJgf1oyFFZyuBY">NEET Registration</a></li><hr/>`;
             })}
         });
 }
